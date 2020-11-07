@@ -2,6 +2,44 @@
 
 All notable changes to `laravel-query-builder` will be documented in this file
 
+## 3.3.3 - 2020-10-27
+
+- prepend table name to `WHERE` clause for ambiguous exact filters (#467)
+
+## 3.3.2 - 2020-10-27
+
+- fix config key to disable `InvalidFilterQuery` exception
+
+## 3.3.1 - 2020-10-11
+
+- make nested scope compatible with older Laravel (#542)
+
+## 3.3.0 - 2020-10-05
+
+- add ability to filter by nested relationship scopes (#519)
+- add config key to disable `InvalidFilterQuery` exception (#525)
+
+## 3.2.4 - 2020-10-01
+
+- update what defines an ignored filter value (#533)
+
+## 3.2.3 - 2020-09-30
+
+- add LengthAwarePaginator to QueryBuilder (#532)
+
+## 3.2.2 - 2020-09-09
+
+- Revert changes from v3.2.1 to `AllowedFilter::filter()`
+
+## 3.2.1 - 2020-09-09
+
+- Fix filtering associative arrays (#488)
+- AllowedFilter::filter() takes a `Illuminate\Database\Eloquent\Builder` instead of a QueryBuilder instance
+
+## 3.2.0 - 2020-09-08
+
+- add support for Laravel 8
+
 ## 3.1.0 - 2020-08-18
 
 - add individual array delimiters for includes, filters, appends and sorts
